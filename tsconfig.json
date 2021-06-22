@@ -11,6 +11,7 @@
       "node_modules/@types"
     ],
     "baseUrl": "./",
+    "rootDir": "./",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -27,6 +28,20 @@
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      /**
+      * should be last in the list, in order to use shorter names for autocomplete
+      */
+      "@src/*": [
+        "./src/*"
+      ]
+    }
   }
 }

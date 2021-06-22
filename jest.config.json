@@ -6,6 +6,7 @@
     "roots": ["<rootDir>/tests/"],
     "moduleNameMapper": {
         "@components/(.*)": "<rootDir>/src/components/$1",
+        "@modules/(.*)": "<rootDir>/src/modules/$1",
         "@src/(.*)": "<rootDir>/src/$1"
     },
     "transform": {
