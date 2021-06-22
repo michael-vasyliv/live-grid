@@ -1,3 +1,4 @@
+import { SquareRow } from '@components/square-row';
 import React, {
     memo,
     useCallback,
@@ -5,7 +6,6 @@ import React, {
     useMemo,
     useState
 } from 'react';
-import { SquareRow } from '../components/square-row';
 
 /** this method does just simple copy, it does not copy methods, if you have any links you will get an error */
 function simpleCopy<I>(items: I): I {

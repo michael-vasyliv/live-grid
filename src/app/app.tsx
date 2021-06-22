@@ -1,7 +1,7 @@
+import { LiveGrid } from '@modules/live-grid';
 import React, { FormEvent, useCallback, useState } from 'react';
 import './app.scss';
 import logo from './logo.svg';
-import { LiveGrid } from './modules/live-grid';
 
 const env = process.env.NODE_ENV?.toUpperCase();
 
