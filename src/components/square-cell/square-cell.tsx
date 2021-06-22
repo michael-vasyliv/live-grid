@@ -6,5 +6,5 @@ type Props = {
 };
 
 export const SquareCell = memo<Props>(({ binary }) => (
-    <div className={`square-cell${binary === 1 ? ' enabled' : ''}`} />
+    <div role="cell" className={`square-cell${binary === 1 ? ' enabled' : ''}`} />
 ));

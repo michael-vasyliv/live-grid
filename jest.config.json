@@ -15,5 +15,6 @@
     },
     "setupFilesAfterEnv": [
         "<rootDir>/tests/config.ts"
-    ]
+    ],
+    "testEnvironment": "jsdom"
 }

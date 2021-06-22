@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const SquareRow = memo<Props>(({ items }) => (
-    <div className="square-row">
+    <div role="row" className="square-row">
         {items.map((x, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <SquareCell key={index} binary={x} />
