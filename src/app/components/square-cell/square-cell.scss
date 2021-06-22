@@ -1,0 +1,10 @@
+.square-cell {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    border: 1px solid #aaa;
+
+    &.enabled {
+        background: black;
+    }
+}
