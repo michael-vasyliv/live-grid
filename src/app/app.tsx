@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { FormEvent, useCallback, useState } from 'react';
 import './app.scss';
 import logo from './logo.svg';
+import { LiveGrid } from './modules/live-grid';
 
 const env = process.env.NODE_ENV?.toUpperCase();
 
 export function App() {
+    const [size, setSize] = useState(5);
+
+    const onSizeChange = useCallback((e: FormEvent<HTMLInputElement>) => {
+        setSize(parseInt(e.currentTarget.value, 10));
+    }, []);
+
     return (
         <div className="App">
             <header className="App-header">
@@ -18,6 +25,8 @@ export function App() {
                 >
                     Learn React
                 </a>
+                <input type="number" value={size} onChange={onSizeChange} />
+                <LiveGrid size={size} />
             </header>
         </div>
     );
